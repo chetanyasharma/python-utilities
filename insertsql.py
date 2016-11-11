@@ -11,10 +11,11 @@ cursor = db.cursor()
 
 # Create table as per requirement
 sql = """CREATE TABLE EMPLOYEE (
+         ID_NO INT,
          FIRST_NAME  CHAR(20) NOT NULL,
          LAST_NAME  CHAR(20),
          AGE INT,
-         SEX CHAR(1),
+         SEX CHAR(10),
          INCOME FLOAT )"""
 
 cursor.execute(sql)
